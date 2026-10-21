@@ -45,7 +45,8 @@ void loop() {
 }
 
 
-
+// New Code: When button is clicked, should spin up motor. should wait 2 secs; if button pressed
+// reset timer ; else spin down/power down motors.
 
 
 
