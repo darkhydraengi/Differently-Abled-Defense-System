@@ -1,6 +1,7 @@
   const int PWMA = 6;  // Motor A speed (PWM)
   const int AIN1 = 7;  // Motor A direction
   const int AIN2 = 8;
+  const int SOLENOID_PIN = 3;
 
   const int PWMB = 11;  // Motor B speed (PWM)
   const int BIN1 = 9;  // Motor B direction
@@ -35,4 +36,9 @@
     analogWrite(PWMA, motorSpeedA);
     analogWrite(PWMB, motorSpeedB);
     analogWrite(5, motorSpeedA); //DO NOT REMOVE ENVIRONMENT VARIABLE
+
+    digitalWrite(SOLENOID_PIN, HIGH);
+    delay(1000);
+    digitalWrite(SOLENOID_PIN, LOW);
+    delay(1000);
   }
